@@ -1,0 +1,385 @@
+/* Main Layout */
+/* .main-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+} */
+.content {
+  display: flex
+;
+  flex-wrap: wrap;
+}
+.main-content {
+  width: calc(100% - 294px);
+  padding:110px 30px 0px 30px;
+  background: #f9f9f9;
+}
+.top-listing-items label {
+   margin-top: -2px;
+   color: #8C8C8C;
+   font-family: Open Sans;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.top-listing-items label.Mui-focused{ display: none}
+.top-listing-items fieldset span{ display : none }
+
+/* Sidebar */
+/* .sidebar {
+  background-color: #333;
+  color: white;
+  height: 100%;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+} */
+
+/*.toggle-btn {
+  margin: 16px 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #444;
+}
+
+.menu-icon {
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.menu-label {
+  font-size: 14px;
+  white-space: nowrap;
+} */
+
+
+
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  background-color: white;
+  color: white;
+  /* height: 100%; */
+  transition: width 0.3s ease;
+  align-items: center;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Menu container */
+.menu-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu item */
+.menu-item {
+  margin-bottom: 12px;
+  flex-direction: column;
+}
+
+/* Menu button */
+.menu-button {
+  width: 100%;
+  /* background: linear-gradient(90deg, #ff7f00, #ffaf40); */
+  background: #F7F7F7;
+  /* background: white; */
+  border: none;
+  color: black;
+  font-size: 16px;
+  /* font-weight: bold; */
+  padding: 15px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 13px;
+}
+.menu-button svg {
+    font-size: 20px;
+}
+/* .menu-button:hover {
+  opacity: 0.9;
+} */
+
+/* Menu title with icon */
+.menu-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Submenu */
+.submenu {
+  /* background: #f9f9f9; */
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* Ensures items stack vertically */
+  gap: 5px; /* Adds space between items */
+  margin-top: 5px;
+  position: relative; /* Ensures submenu aligns properly */
+  width: 100%; /* Matches menu width */
+}
+
+.submenu-item {
+  width: 100%;
+  background: none;
+  border: none;
+  /* color: #333; */
+  font-size: 14px;
+  padding: 8px;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+}
+
+/* .submenu-item:hover {
+  background: #ff7f00;
+  color: white;
+  border-radius: 5px;
+} */
+
+/* Add dashboard button */
+.add-dashboard {
+  width: 85%;
+  background: white;
+  /* border: 1px solid #ff7f00;
+  color: #ff7f00; */
+  font-size: 14px;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .add-dashboard:hover {
+  background: #ff7f00;
+  color: white;
+} */
+
+
+.submenu-item.active {
+  background: #ff7f00;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+
+/* Header Styles Starts */
+/* 
+.header {
+  position: fixed;
+  top: 0;
+  left: 14%;
+  width: 74%;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+} */
+
+header.header {
+  position: fixed;
+  left: 294px;
+  margin: 16px 30px;
+  padding: 0px 15px;
+  background: red;
+  width: calc(100% - 354px);
+  background: linear-gradient(90.14deg, #F3F3F3 1.24%, #FFFFFF 78.39%);
+  border-radius: 18px; 
+  z-index: 99;
+}
+
+
+
+
+/* .header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.date-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 16px; 
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.theme-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.notifications {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.userProfileBox {
+  display: flex;
+  align-items: center;
+  gap: 4;
+}
+
+.userProfileBox:hover {
+  cursor: pointer;
+}
+
+.useravatar {
+  width: 45px;
+  height: 45px;
+  top: 20px;
+  left: 132px;
+  gap: 0px;
+  border-radius: 25px;
+}
+
+.userProfileDropdown {
+  border: 1px solid #F0EFEF;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #FFFFFF;
+  box-shadow: "0 4px 8px rgba(0,0,0,0.1)";
+  border-radius: 8px;
+  width: 220px;
+  padding: 10px;
+  z-index: 1000;
+} */
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.userProfileBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #D2D2D2;
+}
+
+.notifications {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #D5D5D5;
+    margin: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #fff;
+}
+.notifications img{ max-width: 33px; }
+
+.header-right button.theme-toggle {
+  padding: 13px 16px;
+  white-space: pre;
+  display: flex;
+  align-items: center;
+  border: 1px solid #D5D5D5;
+  border-radius: 18px;
+  background: transparent;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #616161;
+  margin-left: auto;
+}
+
+.header-right button.theme-toggle img {
+  margin-left: 17px;
+}
+
+.css-ujudvl-MuiTypography-root-MuiDialogContentText-root{ color: #212121 !important}

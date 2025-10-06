@@ -1,0 +1,479 @@
+
+
+
+
+
+
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>pdf</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+        <body>
+            <div class="roles-permissions-tab reports-tab">
+                <div class="reports-repeated">
+                    <div class="report-title-with-buttons">
+                        <h6>Filter Applied</h6>
+                        <div class="filter-applied-types">
+                            <p><b>Created By</b>:</p>
+                            <p class="highlight">{{CreatedBy}}</p>
+                            <p><b>Created On</b>:</p>
+                            <p class="highlight">{{CreatedOn}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reports-repeated">
+                    <div class="report-box">
+                        <div class="report-type-wrapper-repeat">
+                            <div class="report-type-box">
+                                <p>Report Type</p>
+                                <span>{{ReportType}}</span>
+                            </div>
+                            <div class="report-type-box">
+                                <p>Report Name</p>
+                                <span>{{ReportName}}</span>
+                            </div>
+                            <div class="report-type-box">
+                                <p>Sites</p>
+                                <span>{{Sites}}</span>
+                            </div>
+                            <!--<div class="report-type-box">
+                                <p>Floors</p>
+                                <span>1st floor</span>
+                            </div>
+                            <div class="report-type-box">
+                                <p>Zones</p>
+                                <span>Zone 1,Zone 2</span>
+                            </div>-->
+                            {{ReportFloorZone}}
+                            <div class="report-type-box">
+                                <p>Date Time</p>
+                                <span>{{ReportDateTimeRange}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reports-repeated">
+                    <div class="performance-metric-main">
+                        <h6 class="performance-heading">Key Performance Metric</h6>
+                        <div class="report-wrapper-here">
+                            {{KeyPerformanceMetrics}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reports-repeated">
+                    <h6>Performance Comparison Table</h6>
+                    <div class="report-table">
+                        <table>
+                            <thead>
+                                <tr class="row-background-color">
+                                    <th scope="col">{{SiteZoneTableHeader}}</th>
+                                    {{tableHeaderHtml}}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--<tr>
+                                    <td><b>Zone 1</b></td>
+                                    <td>288</td>
+                                    <td>184%</td>
+                                    <td>0</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Zone 2</b></td>
+                                    <td>0</td>
+                                    <td>0%</td>
+                                    <td>0</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Average</b></td>
+                                    <td>144</td>
+                                    <td>92%</td>
+                                    <td>0</td>
+                                    <td>0%</td>
+                                </tr>-->
+                                {{PerformanceComparisonRows}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="reports-repeated">
+                    <!--<div class="summery-report">
+        <h6 class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root">Summary Insights</h6>
+        <div class="reports-repeated-insights-box">
+            image
+        </div>
+    </div>-->
+                    <div class="summary-insights">
+                        <h6>Summary Insights</h6>
+                        <div class="reports-repeated-insights-box">
+
+                            {{SummaryInsights}}
+                        </div>
+                    </div>
+                    <div class="chart-container no-page-break">
+                        
+                        <div class="reports-chart-container">
+                            <h4 class="chart-title">{{WIDGET1_TITLE}}</h4>
+                            {{SVG_WIDGET1}}
+                        </div>
+                    </div>
+                    <div class="chart-container no-page-break">
+                        
+                        <div class="reports-chart-container">
+                            <h4 class="chart-title">Occupancy Rate Comparison</h4>
+                            {{SVG_WIDGET2}}
+                        </div>
+                    </div>
+                    <div class="chart-container no-page-break">
+                        
+                        <div class="reports-chart-container">
+                            <h4 class="chart-title">Traffic Composition (People Vs Vehicles)</h4>
+                            {{SVG_WIDGET3}}
+                        </div>
+                    </div>
+
+                    <style>
+                            * {
+                                box-sizing: border-box;
+                            }
+
+                            .roles-permissions-tab.reports-tab {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                padding: 20px 0px;
+                            }
+
+                            .reports-repeated {
+                                margin: 20px 0px;
+                            }
+
+                            .report-title-with-buttons {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+
+                            .roles-permissions-tab.reports-tab h6 {
+                                font-family: Open Sans;
+                                font-weight: 600;
+                                font-size: 12.46px;
+                                line-height: 100%;
+                                color: #212121;
+                                margin-bottom: 20px;
+                                width: 60%
+                            }
+
+                            .filter-applied-types p {
+                                font-family: Open Sans;
+                                font-weight: 600;
+                                font-size: 12.46px;
+                                line-height: 100%;
+                                letter-spacing: 0%;
+                                color: #FF8A01;
+                                margin-left: 10px;
+                            }
+
+                            .filter-applied-types strong {
+                                color: red;
+                            }
+
+                            .filter-applied-types p b {
+                                color: #f;
+                                color: #000;
+                                font-weight:600;
+                            }
+
+                            .report-box {
+                                border: 1px solid #D5D5D5;
+                                border-radius: 15px;
+                                padding: 20px;
+                                display: flex;
+                                background: #f3f3f3;
+                                flex-wrap: wrap;
+                            }
+
+                            /*        .report-type-wrapper-repeat {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }*/
+
+                            .report-type-box {
+                                margin-right: 50px;
+                                margin-bottom: 8px;
+                                display: inline-block;
+                            }
+
+                                .report-type-box p {
+                                    margin: 0px;
+                                    font-family: Open Sans;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 28.16px;
+                                    letter-spacing: 0px;
+                                    color: #616161;
+                                }
+
+                                .report-type-box span {
+                                    font-family: Open Sans;
+                                    font-weight: 600;
+                                    font-size: 12.46px;
+                                    line-height: 100%;
+                                    color: #212121;
+                                    display: block;
+                                    text-transform: capitalize;
+                                }
+
+                            .performance-wrapper {
+                                /* display: flex; */
+                                /* flex-wrap: wrap; */
+                                margin: 0px -15px !important;
+                            }
+
+                            body .performance-wrapper td {
+                                background: transparent !important;
+                                border-radius: 0px !important;
+                                border: none !important;
+                            }
+
+                            ..performance-metric-items-wrapper {
+                                border: 1px solid #D5D5D5;
+                                border-radius: 15px;
+                                padding: 15px 20px;
+                                display: inline-block;
+                                align-items: center;
+                                border: none !important
+                            }
+
+                            .performance-metric-image {
+                                width: 32px;
+                                margin-right: 20px;
+                                font-size: 0px;
+                                display: inline-block;
+                                vertical-align: top;
+                            }
+
+                            .performance-metric-details p {
+                                argin: 0;
+                                font-size: 12px;
+                                font-weight: 600;
+                                color: #212121;
+                                text-align: left !important;
+                            }
+
+                            .performance-metric-details strong {
+                                ont-family: Open Sans;
+                                font-weight: 600;
+                                font-size: 21.81px;
+                                line-height: 100%;
+                                color: #212121;
+                                display: block;
+                                text-align: center !important;
+                            }
+
+                            table {
+                                width: 100%;
+                                border-collapse: separate;
+                            }
+
+                                table th {
+                                    font-family: Open Sans;
+                                    font-weight: 600;
+                                    font-size: 15.58px;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    border-radius: 10px 0px 0px 0px;
+                                    border-bottom: 1px solid #D5D5D5;
+                                    padding: 16px;
+                                    color: rgba(0, 0, 0, 0.87);
+                                    border-top: 1px solid #D5D5D5;
+                                    border-left: 1px solid #D5D5D5;
+                                    border-radius: 0px !important;
+                                }
+
+                                    table th:first-child {
+                                        border-radius: 10px 0px 0px 0px !important;
+                                    }
+
+                                    table th:last-child {
+                                        border-radius: 0px 10px 0px 0px !important;
+                                    }
+
+                                table td {
+                                    border-bottom: 1px solid #D5D5D5;
+                                    border-left: 1px solid #D5D5D5;
+                                    background: #fff;
+                                    font-family: Open Sans;
+                                    font-weight: 600;
+                                    font-size: 14.02px;
+                                    line-height: 100%;
+                                    letter-spacing: 0%;
+                                    text-align: center;
+                                    padding: 16px;
+                                    color: rgba(0, 0, 0, 0.87);
+                                }
+
+
+                            .filter-applied-types {
+                                display: flex;
+                            }
+
+                            .reports-repeated h6 {
+                                font-family: Open Sans;
+                                font-weight: 600;
+                                font-size: 12.46px;
+                                line-height: 100%;
+                                color: #212121;
+                                margin-bottom: 20px;
+                            }
+
+                            table th:last-child {
+                                border-right: 1px solid #D5D5D5;
+                                border-radius: 0px 10px 0px 0px;
+                            }
+
+                            table th:first-child {
+                                border-radius: 10px 0px 0px 0px;
+                            }
+
+                            table td:last-child {
+                                border-right: 1px solid #D5D5D5;
+                            }
+
+                            table tbody tr:last-child td:first-child {
+                                border-radius: 0px 0px 0px 10px;
+                            }
+
+                            table tbody tr:last-child td:last-child {
+                                border-radius: 0px 0px 10px 0px;
+                            }
+
+                            table tbody tr:last-child td {
+                                background: #EAF2FF;
+                            }
+
+                            .report-title-with-buttons h6 {
+                                display: inline-block;
+                            }
+
+                            .filter-applied-types {
+                                display: inline-block;
+                                margin-left: auto;
+                            }
+
+                                .filter-applied-types p {
+                                    display: inline-block;
+                                }
+
+                            .performance-metric-details {
+                                width: calc(100% - 60px);
+                                display: inline-block;
+                            }
+
+                            body .performance-metric-main td .performance-metric-items-wrapper {
+                                border: 1px solid #ccc;
+                                border-radius: 10px !important;
+                                padding: 20px;
+                            }
+
+                            .report-wrapper-here {
+                                margin: 0px -15px;
+                            }
+
+                            .reports-repeated-insights-box {
+                                border-radius: 15px;
+                                border: 1px solid #D5D5D5;
+                                padding: 23px;
+                            }
+
+                            .reports-chart-container {
+                                border-radius: 15px;
+                                border: 1px solid #D5D5D5;
+                                padding: 23px;
+                                max-width: max-content;
+                                display: inline-block; 
+                                margin-bottom: 20px;
+                            }
+
+                            .reports-repeated-insights-box ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+                                position: relative;
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                            }
+
+                                .reports-repeated-insights-box ul li {
+                                    width: 100%;
+                                    box-sizing: border-box;
+                                    text-align: left;
+                                    padding-top: 8px;
+                                    padding-bottom: 8px;
+                                    padding-top: 4px;
+                                    padding-bottom: 4px;
+                                    padding-left: 16px;
+                                    padding-right: 16px;
+                                }
+
+                            .reports-repeated-insights-box ul {
+                                padding: 0px;
+                            }
+
+                            .reports-repeated-insights-box {
+                                margin-bottom: 20px;
+                            }
+
+                                .reports-repeated-insights-box ul li {
+                                    list-style: none;
+                                    padding-left: 27px;
+                                    position: relative;
+                                }
+
+                                    .reports-repeated-insights-box ul li:not(:last-child) {
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .reports-repeated-insights-box ul li:before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 7px;
+                                        left: 0px;
+                                        width: 12px;
+                                        height: 12px;
+                                        border-radius: 100%;
+                                        background: #f97316;
+                                    }
+                        .text-green {
+                            color: green !important;
+                        }
+
+                        .text-red {
+                            color: red !important;
+                        }
+                        .row-background-color {
+                            background-color: #f3f3f3 !important;
+                        }
+                    </style>
+</body>
+
+
+
+
+</html>

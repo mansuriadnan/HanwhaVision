@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react-jsx",
+    "strict": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

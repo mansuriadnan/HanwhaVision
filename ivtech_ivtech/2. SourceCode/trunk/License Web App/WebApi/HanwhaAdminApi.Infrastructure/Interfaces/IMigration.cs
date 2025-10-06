@@ -1,0 +1,14 @@
+﻿using MongoDB.Driver;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HanwhaAdminApi.Infrastructure.Interfaces
+{
+    public interface IMigration
+    {
+        Task RunAsync(IMongoDatabase database);
+    }
+}

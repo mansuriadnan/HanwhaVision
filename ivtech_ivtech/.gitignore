@@ -1,0 +1,22 @@
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Application/bin/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Application/obj/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Core/bin/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Core/obj/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Infrastructure/bin/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Infrastructure/obj/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Model/bin/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Model/obj/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Server/obj/
+2. SourceCode/trunk/BI Dashboard Web App/hanwhaclient.client/obj/
+2. SourceCode/trunk/BI Dashboard Web App/.vs/
+2. SourceCode/trunk/BI Dashboard Web App/HanwhaClient.Server/bin/
+2. SourceCode/trunk/License Web App/WebApi/.vs/
+2. SourceCode/trunk/License Web App/WebApi/HanwhaAdminApi.Application/obj/
+2. SourceCode/trunk/License Web App/WebApi/HanwhaAdminApi.Core/obj/
+2. SourceCode/trunk/License Web App/WebApi/HanwhaAdminApi.Infrastructure/obj/
+2. SourceCode/trunk/License Web App/WebApi/HanwhaAdminApi.Model/obj/
+2. SourceCode/trunk/License Web App/WebApi/HanwhaAdminApi/obj/
+*.dll
+*.pdb
+*.deps.json
+2. SourceCode/trunk/License Web App/WebApi/HanwhaAdminApi/bin/
