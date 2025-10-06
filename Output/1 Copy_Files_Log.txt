@@ -1,0 +1,36 @@
+﻿08/27/2025 14:36:40 - Stopping IIS App Pool: MyAppPool
+08/27/2025 14:36:45 - Copying files from C:\Users\CommandControl\Downloads\Vision Insight Deployment Package - 20250826\Vision Insight Deployment Package - 20250825_0752PM\Publish to C:\Program Files\Vision Insight Installer\Publish using robocopy
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, August 27, 2025 2:36:45 PM
+   Source : C:\Users\CommandControl\Downloads\Vision Insight Deployment Package - 20250826\Vision Insight Deployment Package - 20250825_0752PM\Publish\
+     Dest : C:\Program Files\Vision Insight Installer\Publish\
+
+    Files : *.*
+	    
+  Options : *.* /NDL /NFL /S /E /DCOPY:DA /COPY:DAT /PURGE /MIR /NP /R:5 /W:3 
+
+------------------------------------------------------------------------------
+
+	*EXTRA Dir        -1	C:\Program Files\Vision Insight Installer\Publish\License\
+	  *EXTRA File 		     638	C:\Program Files\Vision Insight Installer\Publish\License\license.lic
+	  *EXTRA File 		     425	C:\Program Files\Vision Insight Installer\Publish\License\public-key.pem
+	*EXTRA Dir        -1	C:\Program Files\Vision Insight Installer\Publish\Logs\
+	  *EXTRA File 		  117638	C:\Program Files\Vision Insight Installer\Publish\Logs\2025-08-26-log.txt
+	  *EXTRA File 		  217622	C:\Program Files\Vision Insight Installer\Publish\Logs\2025-08-27-log.txt
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :        26         0        26         0         0         2
+   Files :      1051         0      1051         0         0         4
+   Bytes :  319.87 m         0  319.87 m         0         0   328.4 k
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : Wednesday, August 27, 2025 2:36:45 PM
+
+08/27/2025 14:36:45 - Robocopy succeeded (ExitCode=2)
+08/27/2025 14:36:45 - Starting IIS App Pool: MyAppPool
+08/27/2025 14:36:45 - Exception occurred: The service cannot accept control messages at this time. (Exception from HRESULT: 0x80070425)
