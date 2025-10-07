@@ -1,0 +1,163 @@
+# .NET Build Outputs
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild/
+
+# Visual Studio Cache/Options
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build Results
+[Dd]ebugPublic/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Installer Output
+Output/
+*.exe
+*.msi
+
+# Inno Setup Temp Files
+*.tmp
+*_tmp.iss
+
+# Publish Directory (if you don't want to commit compiled files)
+Publish/
+**/Publish/
+
+# Dependencies Folder (large installer files)
+Dependencies/*.exe
+Dependencies/*.msi
+!Dependencies/.gitkeep
+
+# Logs
+Logs/
+*.log
+
+# Temporary Files
+*.temp
+*.cache
+*.ilk
+*.meta
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.bak
+*.cache
+*.swp
+*~
+
+# Windows Image File Caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Recycle Bin
+$RECYCLE.BIN/
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Mac
+.DS_Store
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+coverage*.xml
+coverage*.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Entity Framework
+*.mdf
+*.ldf
+*.ndf
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# TeamCity
+_TeamCity*
+
+# DotCover
+*.dotCover
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# Web workbench (sass)
+.sass-cache/
+
+# Node modules (if you use any frontend build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# MongoDB data (if storing locally)
+data/
+
+# PowerShell script logs
+*.ps1.log
+
+# Keep these files
+!.gitignore
+!*.ico
+!*.iss
