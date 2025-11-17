@@ -1,0 +1,13 @@
+{
+  "Data": {
+	"CustomerName": "CSOB Test Lic",
+	"SiteName": "Site1"
+    "LicenseType": "Trail",
+    "StartDate": "2025-01-01",
+    "EndDate": "2026-01-15",
+    "MACAddress": null,
+    "NumberOfUsers": 30,
+    "NumberOfChannels": 30
+  },
+  "Signature": "xaU+MNL9WITKa4QKDMtapGVf7QFHXO5rvKdRbTG469zIeWlwbwJ8/poVntiJxnwI5Hb4leeNrq2pV+WBcJDVk2Juw6Lo6Tf5Xq4Rgs6TM5mkrJHbSe84oOXB/hO8s5y/2dnVBiIAYjDlQiO2WdZacEHkat45BsCbhjPiJmIkJQdDgWk1LH7j/XD5C3o/HBscVaSodlbot5F8ewAJfxcV0snK8RXPBUlFU1W73y64sDtLBfeC/iT35Qd/+ZzHqC9Xj6XOasEKejpMfMukrgDJCQXHA0NcRL3ibkbVO0BIIz3m+zpy0KEGXa9vOUgkcEpwqS01pg7YOV9b87voDkoUdQ=="
+}

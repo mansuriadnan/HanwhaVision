@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    // Specifies the target ECMAScript version
+    "target": "es2015",
+    
+    // Libraries to include in the compilation
+    "lib": ["dom", "dom.iterable", "esnext"],
+    
+    // Allows JavaScript files to be compiled
+    "allowJs": true,
+    
+    // Skips type checking of declaration files
+    "skipLibCheck": true,
+    
+    // Enables synthetic default imports
+    "allowSyntheticDefaultImports": true,
+    
+    // Enforces case sensitivity in file imports
+    "forceConsistentCasingInFileNames": true,
+    
+    // Disallows fallthrough cases in switch statements
+    "noFallthroughCasesInSwitch": true,
+    
+    // Specifies the module system to use in the output
+    "module": "commonjs",
+    
+    // Resolves modules using Node.js conventions
+    "moduleResolution": "node",
+    
+    // Allows JSON files to be imported as modules
+    "resolveJsonModule": true,
+    
+    // Ensures each file is treated as a module
+    "isolatedModules": true,
+    
+    // Prevents the compiler from emitting files
+    "noEmit": true,
+    
+    // Specifies the JSX factory to use
+    "jsx": "react-jsx",
+    
+    // Disables implicit `any` errors
+    "noImplicitAny": false,
+    
+    // Enables strict type checking options
+    "strict": true,
+    
+    // Enables compatibility with ES Module interop
+    "esModuleInterop": true,
+    
+    // Enables iteration features in older ECMAScript versions
+    "downlevelIteration": true
+  },
+  
+  // Specifies which files to include in the project
+  "include": ["src", "src/types/react-canvas-polygons.d.ts"]
+}

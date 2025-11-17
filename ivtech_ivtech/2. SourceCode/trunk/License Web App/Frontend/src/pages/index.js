@@ -1,0 +1,16 @@
+export { LoginPage } from "./Auth/LoginPage";
+export { ForgotPassword } from "./Auth/ForgotPassword";
+export { OTPVerification } from "./Auth/OTPVerification";
+export { ResetPassword } from "./Auth/ResetPassword";
+export { ChangePasswordPage } from "./User/ChangePasswordPage";
+export { UserManagementPage } from "./User/UserManagement";
+export { RoleAddEditPage } from "./UserRole/RoleAddEditPage";
+export { RolesListPage } from "./UserRole/RolesListPage";
+export { RolePermissionsManagement } from "./UserRole/RolePermissionsManagement";
+export { ClientManagement } from "./Client/ClientManagement";
+export { ClientAddEditPage } from "./Client/ClientAddEditPage";
+export { LicenseManagement } from "./License/LicenseManagement";
+export { LicenseAddEditPage } from "./License/LicenseAddEditPage";
+export { DistributorManagement } from "./Distributor/DistributorManagement";
+export { ProfilePage } from "./Profile/ProfilePage";
+export {WelcomePage} from "./Welcome/WelcomePage";

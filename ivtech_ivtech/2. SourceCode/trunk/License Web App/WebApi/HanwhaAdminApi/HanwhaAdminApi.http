@@ -1,0 +1,6 @@
+@HanwhaAdminApi_HostAddress = http://localhost:5135
+
+GET {{HanwhaAdminApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

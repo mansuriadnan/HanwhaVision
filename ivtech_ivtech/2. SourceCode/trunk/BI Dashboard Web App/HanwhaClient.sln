@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanwhaClient.Server", "HanwhaClient.Server\HanwhaClient.Server.csproj", "{D0D46520-A847-4547-8422-0D3ADA3D5278}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "hanwhaclient.client", "hanwhaclient.client\hanwhaclient.client.esproj", "{94E35800-53CC-4A67-9E68-3A7471EB1949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanwhaClient.Model", "HanwhaClient.Model\HanwhaClient.Model.csproj", "{49548019-6488-41C2-9C95-D1F045E442A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanwhaClient.Application", "HanwhaClient.Application\HanwhaClient.Application.csproj", "{FC2DD3D2-0A3E-4536-9FE4-5A03392D7029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanwhaClient.Core", "HanwhaClient.Core\HanwhaClient.Core.csproj", "{2311937E-C34C-477D-81AB-4CC4DA87D62B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HanwhaClient.Infrastructure", "HanwhaClient.Infrastructure\HanwhaClient.Infrastructure.csproj", "{AE143947-A2B6-46E4-BDC3-1CD2B4E376E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0D46520-A847-4547-8422-0D3ADA3D5278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D46520-A847-4547-8422-0D3ADA3D5278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D46520-A847-4547-8422-0D3ADA3D5278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D46520-A847-4547-8422-0D3ADA3D5278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E35800-53CC-4A67-9E68-3A7471EB1949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E35800-53CC-4A67-9E68-3A7471EB1949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E35800-53CC-4A67-9E68-3A7471EB1949}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{94E35800-53CC-4A67-9E68-3A7471EB1949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E35800-53CC-4A67-9E68-3A7471EB1949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E35800-53CC-4A67-9E68-3A7471EB1949}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{49548019-6488-41C2-9C95-D1F045E442A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49548019-6488-41C2-9C95-D1F045E442A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49548019-6488-41C2-9C95-D1F045E442A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49548019-6488-41C2-9C95-D1F045E442A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2DD3D2-0A3E-4536-9FE4-5A03392D7029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2DD3D2-0A3E-4536-9FE4-5A03392D7029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2DD3D2-0A3E-4536-9FE4-5A03392D7029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2DD3D2-0A3E-4536-9FE4-5A03392D7029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2311937E-C34C-477D-81AB-4CC4DA87D62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2311937E-C34C-477D-81AB-4CC4DA87D62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2311937E-C34C-477D-81AB-4CC4DA87D62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2311937E-C34C-477D-81AB-4CC4DA87D62B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE143947-A2B6-46E4-BDC3-1CD2B4E376E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE143947-A2B6-46E4-BDC3-1CD2B4E376E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE143947-A2B6-46E4-BDC3-1CD2B4E376E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE143947-A2B6-46E4-BDC3-1CD2B4E376E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F6B7814-F14D-448D-A240-BA5D2B05A115}
+	EndGlobalSection
+EndGlobal
